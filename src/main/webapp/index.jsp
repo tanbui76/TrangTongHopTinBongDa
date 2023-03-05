@@ -5,7 +5,9 @@
 <head>
 <meta charset="UTF-8">
 <title>Insert title here</title>
-<link rel="stylesheet" href="/webapp/css/style.css">
+<style>
+ <%@ include file="/css/styleWeb.css"%>
+ </style>
 </head>
     <body class="page-folder " data-source="Folder-TheThao_BongDa" id="dark_theme">
         <div id="_ads_bg_top" class="lazier"></div>
