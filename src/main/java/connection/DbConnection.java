@@ -22,13 +22,13 @@ public class DbConnection {
         } catch (SQLException e) {
             e.printStackTrace();
         } finally {
-            try {
-                if (conn != null && !conn.isClosed()) {
-                    conn.close();
-                }
-            } catch (SQLException e) {
-                e.printStackTrace();
-            }
+//            try {
+//                if (conn != null && !conn.isClosed()) {
+//                    conn.close();
+//                }
+//            } catch (SQLException e) {
+//                e.printStackTrace();
+//            }
         }
         return conn;
 	}
