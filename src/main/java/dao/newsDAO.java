@@ -22,7 +22,7 @@ public class newsDAO {
 			connection = DbConnection.connection();
 			stm = connection.prepareStatement(query);
 			rs = stm.executeQuery();
-			if(rs.next()) {
+			while(rs.next()) {
 				 int id = rs.getInt("id");
 				 String images = rs.getString("images");
 				 String title = rs.getNString("title");
@@ -35,5 +35,13 @@ public class newsDAO {
 			e.printStackTrace();
 		} 
 		return tk;
+	}
+	public static void main(String args[]) {
+		List<News> list = loadNews();
+		for (News news : list) {
+			System.out.println(news.getTitle());
+			
+		}
+		
 	}
 }
