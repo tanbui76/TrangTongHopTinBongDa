@@ -4,7 +4,7 @@
 <html>
 <head>
 <meta charset="UTF-8">
-<title>Insert title here</title>
+<title>Trang tin tức bóng đá</title>
 <style>
  <%@ include file="/css/styleWeb.css"%>
  </style>

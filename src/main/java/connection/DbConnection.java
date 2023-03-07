@@ -12,9 +12,7 @@ public class DbConnection {
         String password = "123";
         try {
 			Class.forName("com.microsoft.sqlserver.jdbc.SQLServerDriver");
-			System.out.println("A");
 			conn = DriverManager.getConnection(url,user,password);
-			System.out.println("A");
 			if (conn != null) {
                 System.out.println("Kết nối tới CSDL thành công!");
             }
